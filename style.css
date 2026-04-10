@@ -54,7 +54,7 @@ body {
 .btn {
     border: none;
     outline: none;
-    background-color: #d8d8d8; /* Light gray from screenshot */
+    background-color: #d8d8d8; /* Light gray  */
     font-size: 1.5rem;
     padding: 20px;
     cursor: pointer;
@@ -62,7 +62,7 @@ body {
 }
 
 .operator {
-    background-color: #df9144; /* Orange from screenshot */
+    background-color: #007bff; /* vibrant blue */
     color: white;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .operator:hover {
-    background-color: #c67d38;
+    background-color: #0056b3; /* darker blue */
 }
 
 .btn:active {
