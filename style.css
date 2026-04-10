@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.calculator-wrapper {
+    width: 320px; /* Keep wrapper width consistent */
+    border: 2px solid #000;
+}
+
+/* Screen Styling */
+.calculator-screen {
+    background-color: #000;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    min-height: 20px;
+}
+
+.current-operand {
+    font-size: 2.5rem;
+}
+
+/* Button Grid Setup */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #000; /* Fills gaps with black to act as borders */
+    gap: 2px; /* Creates the border effect between buttons */
+}
+
+/* Button Styling */
+.btn {
+    border: none;
+    outline: none;
+    background-color: #d8d8d8; /* Light gray from screenshot */
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.operator {
+    background-color: #df9144; /* Orange from screenshot */
+    color: white;
+}
+
+/* Grid Spanning */
+.span-two {
+    grid-column: span 2;
+}
+
+.span-three {
+    grid-column: span 3;
+}
+
+/* Required Hover & Active States */
+.btn:hover {
+    background-color: #c4c4c4;
+}
+
+.operator:hover {
+    background-color: #c67d38;
+}
+
+.btn:active {
+    background-color: #a6a6a6;
+    transform: scale(0.98); /* Slight visual push effect */
+}
