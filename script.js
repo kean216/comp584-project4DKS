@@ -4,7 +4,7 @@ const previousOperandTextElement = document.getElementById('previous-operand');
 const buttons = document.querySelectorAll('.btn');
 
 // State Variables
-let currentOperand = '1'; // Default matching the screenshot
+let currentOperand = '0'; 
 let previousOperand = '';
 let currentOperation = undefined;
 
